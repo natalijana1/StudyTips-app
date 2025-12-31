@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "732260345126",
+    "project_id": "studytips-9892c",
+    "storage_bucket": "studytips-9892c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732260345126:android:aaa37c485aefa789b50de7",
+        "android_client_info": {
+          "package_name": "com.natali.studytip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr3ZISvRiMTx1ZEU_jfIDqu8TVP_ymqUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
