@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Optional Image -->
+        <ImageView
+            android:id="@+id/tip_image"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:background="@color/gray_light"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic"
+            tools:visibility="visible" />
+
+        <!-- Floating Action Buttons Container -->
+        <LinearLayout
+            android:id="@+id/action_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Edit Button -->
+            <ImageButton
+                android:id="@+id/edit_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_pencil"
+                android:background="@drawable/floating_button_bg"
+                android:padding="6dp"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/edit"
+                android:layout_marginEnd="8dp"
+                app:tint="@color/violet_accent" />
+
+            <!-- Delete Button -->
+            <ImageButton
+                android:id="@+id/delete_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_trash"
+                android:background="@drawable/floating_button_bg"
+                android:padding="6dp"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/delete"
+                app:tint="@color/red_error" />
+        </LinearLayout>
+
+        <!-- Author Avatar -->
+        <ImageView
+            android:id="@+id/author_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_person"
+            android:background="@drawable/circle_background"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tip_image"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:src="@tools:sample/avatars" />
+            <!-- Margin will be set programmatically in adapter -->
+
+        <!-- Author Name -->
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/gray_dark"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintTop_toTopOf="@id/author_avatar"
+            app:layout_constraintBottom_toBottomOf="@id/author_avatar"
+            app:layout_constraintStart_toEndOf="@id/author_avatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="John Doe" />
+
+        <!-- Tip Title -->
+        <TextView
+            android:id="@+id/tip_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/author_avatar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="The 5-Minute Desk Reset" />
+
+        <!-- Tip Description -->
+        <TextView
+            android:id="@+id/tip_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/gray_dark"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tip_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Before starting your session, spend exactly 5 minutes clearing trash, old coffee cups, and unnecessary papers. A clean physical space leads to a clear mental space." />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
