@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/author_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground">
+
+    <!-- Avatar Container -->
+    <FrameLayout
+        android:id="@+id/avatar_container"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Author Avatar -->
+        <ImageView
+            android:id="@+id/author_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"
+            tools:src="@tools:sample/avatars" />
+
+        <!-- Icon for "All Authors" option -->
+        <ImageView
+            android:id="@+id/all_authors_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_book_open"
+            android:visibility="gone"
+            app:tint="@color/violet_accent"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+    <!-- Author Name -->
+    <TextView
+        android:id="@+id/author_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:layout_marginStart="12dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        app:layout_constraintTop_toTopOf="@id/avatar_container"
+        app:layout_constraintBottom_toBottomOf="@id/avatar_container"
+        app:layout_constraintStart_toEndOf="@id/avatar_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Author Name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
