@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Primary Colors (Gradient) -->
+    <color name="blue_primary">#5B8DEF</color>
+    <color name="purple_primary">#A855F7</color>
+    <color name="violet_accent">#7C3AED</color>
+
+    <!-- Background & Surface -->
+    <color name="background">#F5F5F5</color>
+    <color name="surface_white">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#666666</color>
+    <color name="gray_dark">#424242</color>
+    <color name="gray_medium">#9E9E9E</color>
+    <color name="gray_light">#E0E0E0</color>
+
+    <!-- Status Colors -->
+    <color name="red_error">#EF4444</color>
+
+    <!-- Standard Colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- New Purple Design System -->
+    <color name="purple_600">#8B5CF6</color>
+    <color name="purple_400">#A78BFA</color>
+    <color name="gray_900">#1F2937</color>
+    <color name="gray_600">#4B5563</color>
+    <color name="gray_300">#E5E7EB</color>
+    <color name="gray_50">#F9FAFB</color>
+
+    <!-- Filter UI Colors -->
+    <color name="purple_filter_bg">#F3E8FF</color>
+    <color name="purple_badge">#A855F7</color>
+    <color name="filter_bar_bg">#F9FAFB</color>
 </resources>
